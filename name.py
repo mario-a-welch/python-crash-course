@@ -8,7 +8,7 @@ print(name.lower())  # lower() method changes each word to lower case
 
 print("-----")
 
-# full_name.py
+# Using variables in strings
 
 first_name = "ada"
 last_name = "lovelace"
@@ -19,3 +19,27 @@ print(f"Hello, {full_name.title()}")
 
 message = f"Hello, {full_name.title()}"
 print(message)
+
+print("-----")
+
+# Adding whitespace to strings with tabs or newlines
+
+print("Python")
+
+print("\tPython")  # \t will add a tab to your text
+
+print("Languages:\nPython\nC\nJavaScript")  # \n will add a newline in a string
+
+print("Languages:\n\tPython\n\tC\n\tJavaScript")  # can combine tabs and newlines in a single string
+
+# Stripping Whitespace
+
+favorite_language = '     python   '
+print(favorite_language)
+print(favorite_language.rstrip())  # rstrip() will strip all white space to the right of the last word
+print(favorite_language.lstrip())  # lstrip() will remove all white space to the left of the first word
+favorite_language = '     Python is cool '
+print(favorite_language.strip())
+# strip() will remove all white space to the left of the first word and right of the last word
+# rstrip(), lstrip() and strip() only temporarily removes the whitespace, in order to permanently remove it you must
+# assign the value to the variable
