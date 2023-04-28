@@ -43,3 +43,12 @@ print(favorite_language.strip())
 # strip() will remove all white space to the left of the first word and right of the last word
 # rstrip(), lstrip() and strip() only temporarily removes the whitespace, in order to permanently remove it you must
 # assign the value to the variable
+
+# Removing Prefixes
+
+noStarch_url = 'https://nostarch.com'
+print(noStarch_url)
+# Similar to the methods for removing whitespace, removeprefix() leaves the original string unchanged.  If you want to
+# keep the new value, you must reassign it to the original variable or assign it to a new variable
+simple_url = noStarch_url.removeprefix('https://')
+print(simple_url)
