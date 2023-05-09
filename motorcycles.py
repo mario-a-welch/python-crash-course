@@ -56,7 +56,21 @@ print(motorcycles)
 too_expensive = 'ducati'
 motorcycles.remove(too_expensive)
 print(motorcycles)
-print(f'\nA {too_expensive.title()} is too expensive for me.')
+print(f'\nA {too_expensive.title()} is too expensive for me.\n')
 
 # The remove() method deletes only the first occurrence of the value you specify.  If there's a possiblity the value
 # appears more than once in the list, you'll need to use a loop to make sure all occurrences of the value are removed.
+
+# Try It Yourself
+guest_list = ['Keith Welch', 'Warren Buffet', 'Kobe Bryant']
+print(f'\n{guest_list}\n')
+for guest in guest_list:
+    print(f"Will you please join me at dinner {guest}?")
+
+# Reassigns last value of guest_list
+new_guest = 'Kevin Hart'
+guest_list[2] = new_guest
+print(f'\n{guest_list}\n')
+
+for guest in guest_list:
+    print(f"Will you please join me at dinner {guest}?")
